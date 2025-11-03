@@ -1,0 +1,31 @@
+{
+  "name": "mud-bridge-mcp",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "MCP server for AI assistant to MUD bridge connections",
+  "main": "mcp-server.js",
+  "scripts": {
+    "start": "node mcp-server.js",
+    "test": "node test-mcp.js",
+    "test-client": "node mcp-mud-client.js",
+    "quick-start": "./quick-start.sh"
+  },
+  "dependencies": {
+    "@gesslar/colours": "^0.0.1",
+    "@modelcontextprotocol/sdk": "^1.20.2",
+    "zod": "^3.25.76"
+  },
+  "keywords": [
+    "mcp",
+    "mud",
+    "lpc",
+    "ai",
+    "assistant",
+    "bridge"
+  ],
+  "author": "AI Assistant",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

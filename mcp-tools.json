@@ -1,0 +1,132 @@
+{
+  "name": "mud-bridge-mcp",
+  "version": "1.0.0",
+  "description": "MCP tools for LLM-to-MUD interaction via bridge server",
+  "tools": [
+    {
+      "name": "mud_connect",
+      "description": "Connect to the MUD world as a virtual user",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "session_name": {
+            "type": "string",
+            "description": "Optional name for this session"
+          }
+        }
+      }
+    },
+    {
+      "name": "mud_execute_command",
+      "description": "Execute a command in the MUD world",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "command": {
+            "type": "string",
+            "description": "The MUD command to execute (e.g., 'look', 'north', 'say hello')"
+          }
+        },
+        "required": [
+          "command"
+        ]
+      }
+    },
+    {
+      "name": "mud_observe_room",
+      "description": "Get detailed information about the current room",
+      "inputSchema": {
+        "type": "object",
+        "properties": {}
+      }
+    },
+    {
+      "name": "mud_move",
+      "description": "Move in a specific direction or to a location",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "direction": {
+            "type": "string",
+            "description": "Direction to move (north, south, east, west, up, down, etc.)"
+          }
+        },
+        "required": [
+          "direction"
+        ]
+      }
+    },
+    {
+      "name": "mud_say",
+      "description": "Say something in the current room",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "message": {
+            "type": "string",
+            "description": "What to say"
+          }
+        },
+        "required": [
+          "message"
+        ]
+      }
+    },
+    {
+      "name": "mud_emote",
+      "description": "Perform an emote/action in the current room",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "action": {
+            "type": "string",
+            "description": "The emote/action to perform"
+          }
+        },
+        "required": [
+          "action"
+        ]
+      }
+    },
+    {
+      "name": "mud_who",
+      "description": "See who is currently online in the MUD",
+      "inputSchema": {
+        "type": "object",
+        "properties": {}
+      }
+    },
+    {
+      "name": "mud_inventory",
+      "description": "Check what items you are carrying",
+      "inputSchema": {
+        "type": "object",
+        "properties": {}
+      }
+    },
+    {
+      "name": "mud_examine",
+      "description": "Examine an object or person in detail",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "target": {
+            "type": "string",
+            "description": "What to examine"
+          }
+        },
+        "required": [
+          "target"
+        ]
+      }
+    },
+    {
+      "name": "mud_disconnect",
+      "description": "Disconnect from the MUD world",
+      "inputSchema": {
+        "type": "object",
+        "properties": {}
+      }
+    }
+  ]
+}
