@@ -13,7 +13,7 @@
   "dependencies": {
     "@gesslar/colours": "^0.0.1",
     "@modelcontextprotocol/sdk": "^1.25.1",
-    "zod": "^4.2.1"
+    "zod": "^4.3.2"
   },
   "keywords": [
     "mcp",
