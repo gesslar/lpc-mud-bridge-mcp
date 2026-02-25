@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@gesslar/colours": "^0.8.0",
-    "@modelcontextprotocol/sdk": "^1.27.0",
+    "@modelcontextprotocol/sdk": "^1.27.1",
     "zod": "^4.3.6"
   },
   "keywords": [
